@@ -1,0 +1,104 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_calendar
+ *= require_tree .
+ */
+
+.contextual {
+  float:right;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+/* Custom container */
+.container-narrow {
+    margin: 0 auto;
+  max-width: 750px;
+}
+
+.container-narrow > hr {
+  margin: 20px 0 0;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer hr {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.flr {
+  float: right;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.explain {
+  margin-right: 10px;
+}
+
+.ra {
+  text-align: right !important;
+}
+
+.ca {
+  text-align: center !important;
+}
+
+.pagination .pagination {
+  margin-top: 0px !important;
+}
+
+.alert ul {
+  margin-bottom: 0px;
+}
+
+.muted a:visited, .muted a:hover {
+  text-decoration: none;
+}
+
+.muted a:visited {
+  color: #999999;
+}
+
+.muted a:hover {
+  color:#005580;  
+}
+
+.cal-day-daylight {
+  background-color: #fcf8e3;
+}
+.cal-day-daylight:hover {
+  background-color: #fceea7;
+}
+.cal-day-daylight span[data-cal-date] {
+  color: darkgoldenrod;
+  font-size: 1.9em;
+}
+
+.cal-day-night {
+  background-color: #d9edf7;
+}
+.cal-day-night:hover {
+  background-color: #b7e3f9;
+}
+.cal-day-night span[data-cal-date] {
+  color: darkblue;
+  font-size: 1.9em;
+}

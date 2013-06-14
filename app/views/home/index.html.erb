@@ -1,0 +1,17 @@
+<h1>Very simple example</h1>
+<p>Find me in app/views/home/index.html.erb</p>
+
+<%=
+
+options = { extra_day_classes: lambda { |classes, date|
+  classes << 'cal-day-daylight' if (5 == date.day)  
+  classes << 'cal-day-night' if (10 == date.day)
+  }
+}
+bootstrap_calendar Date.today, options do |date|
+  content_tag :span, class: "pull-right", "data-cal-date" => "some", "data-cal-view" => "day" do
+    date.day.to_s
+  end
+end
+%>
+
