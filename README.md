@@ -1,7 +1,7 @@
 bootstrap_calendar_rails gem example application
 ================================
 
-This application provides an example how to use bootstrap_calendar_rails gem 
+This application provides an example how to use bootstrap_calendar_rails gem . Will be ported to Rails 4 soon.
 
 It's lloks like that
 ================================
